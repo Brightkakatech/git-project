@@ -4,8 +4,8 @@ files:
   - source: /
     destination: /var/www/html
 
-hooks:
-  BeforeInstall:
-    - location: scripts/empty_dir.sh
-      timeout: 300
-      runas: root
+#hooks:
+#  BeforeInstall:
+#   - location: scripts/.sh
+#      timeout: 300
+#     runas: root
