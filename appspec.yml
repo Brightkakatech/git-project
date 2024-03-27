@@ -3,3 +3,10 @@ os: linux
 files: 
   -source: /
    destination: /var/www/hmtl
+  hooks:
+    AfterInstall:
+      -location: afterinstall.sh
+      timeout: 100
+    ApplicationStart:
+      - Location: applicationstart.sh
+        timeout: 100
