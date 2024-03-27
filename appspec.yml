@@ -3,3 +3,9 @@ os: linux
 files:
   - source: /
     destination: /var/www/html
+
+  Hooks:
+  BeforeInstall:
+    -location: scripts/empty_dir.sh
+      time out: 300
+      runas: root
